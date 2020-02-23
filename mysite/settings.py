@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     # Local Apps
 
-    'neighborhood.apps.NeighborhoodsConfig',
+    'neighborhoods.apps.NeighborhoodsConfig',
 ]
 
 MIDDLEWARE = [
