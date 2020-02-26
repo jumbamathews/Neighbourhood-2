@@ -29,3 +29,8 @@
   background: #B589D6;
   height: 100vh;
 }
+.sanchez {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

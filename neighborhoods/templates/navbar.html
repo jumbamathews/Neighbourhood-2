@@ -23,13 +23,13 @@
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
         </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333" style="background-color: rgb(62, 167, 216)" class="text-success">
+        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item" href="{% url 'edit-profile' user.username %}">Update Profile</a>
           <a class="dropdown-item" href="{% url 'profile' user.username %}">View Profile</a>
           <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
         </div>
       </li>
-      <li class="nav-item active" style="padding-top: 10px"><span class="text-white">{{user.username|title}}</span></li>
+      <li class="nav-item active" style="padding-top: 10px"></li>
       
     </ul>
     {% else %}
