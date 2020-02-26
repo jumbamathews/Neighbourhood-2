@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="container-fluid">
-
+<div class="container-fluid page2">
+  <div class="container">
+    <a href="{% url 'new-hood' %}" class="btn btn-sm btn-info mb-2" style="text-align: center">Add New Neighbourhood</a>
+  </div>
   <div class="row">
+    
     {% for hood in all_hoods %}
+    
     <div class="col-md-4">
-      <div class="card mb-4" style="min-height:340px">
+      <div class="card mb-4" style="height:340px">
         <h5 class="card-title">{{ hood.name }} ({{hood.location}}) <span class="ml-4">{{hood.members.count}}
           member{{hood.members.count|pluralize}}</span></h5>
         <img src="{{ hood.neighbourhood_logo.url }}" class="card-img-top" alt="{{ hood.name }}" height="180px">
@@ -26,14 +30,8 @@
     </div>
     {% endfor %}
   </div>
-    <a href="{% url 'new-hood' %}" class="btn btn-sm btn-info mb-2" style="text-align: center"> New Neighbourhood</a>
+   
 </div>
 
-<style>
-    body{
-      background-image: url('/static/images/index2.jpg');
-      background-repeat:no-repeat;
-      background-size: cover;
-    }
-  </style>
+
 {% endblock %}
