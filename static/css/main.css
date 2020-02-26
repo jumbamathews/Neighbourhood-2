@@ -1,3 +1,14 @@
+#simon {
+  background: linear-gradient(rgba(109, 33, 60, 0.6), rgba(109, 33, 60, 0.6)),
+    url("https://bit.ly/2Tg0eol")
+      no-repeat center center/cover;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
-  color: red;
+  color: aqua;
 }
