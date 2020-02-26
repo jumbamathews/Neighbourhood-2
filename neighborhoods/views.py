@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Neighbourhood, Profile, Business, Post
 
 
-@login_required(login_url='login')
+
 def index(request):
     return render(request, 'index.html')
 
@@ -42,7 +42,7 @@ def edit_profile(request, username):
 def profile(request, username):
     return render(request, 'profile.html')
 
-
+@login_required(login_url='login')
 def neighbourhoods(request):
     all_hoods = Neighbourhood.objects.all()
     all_hoods = all_hoods[::-1]
