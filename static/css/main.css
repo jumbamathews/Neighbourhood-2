@@ -10,7 +10,7 @@
   align-items: center;
 }
 .header {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Permanent Marker';
  /* font-family: 'Zhi Mang Xing', cursive; */
 }
@@ -18,4 +18,10 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.hone {
+  font-family: 'Permanent Marker';
+  color:white;  
+  font-size: 4rem;
+
 }
