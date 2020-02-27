@@ -5,17 +5,13 @@ from django.contrib.auth.models import User
 
 class TestProfile(TestCase):
     def setUp(self):
-        self.user = User(username='doryn',
-                         email='doryn@gmail.com', password='3rt5')
+        self.user = User(username='skimanikings',
+                         email='kimanisimon856@gmai.com', password='qwertyuioplkjh')
         self.user.save()
 
         self.neighbourhood = Neigbourhood(
-            name='Goster', description='Next to Bamburi', police_number=910, healthcenter_number=56)
+            name='Simon', description='Party the night away!!', police_number=919, healthcenter_number=919)
         self.neighbourhood.save()
-
-        self.profile = Profile(user=self.user, name='doryn', bio='my bio',
-                               profile_picture='image.png', location='kmos', neighbourhood=self.neighbourhood)
-
     def test_instance(self):
         self.assertTrue(isinstance(self.profile, Profile))
 
@@ -33,8 +29,8 @@ class TestProfile(TestCase):
 
 class TestNeigbourhood(TestCase):
     def setUp(self):
-        self.neighbourhood = Neigbourhood(name='Kianda', description='My heighbourhood', location='Keiyo',
-                                          admin='andy', neighbourhood_logo='logo.png', police_number=0, healthcenter_number=0, occupants_count='4')
+        self.neighbourhood = Neigbourhood(name='simon', description='Party the night away!!', location='Nairobi',
+                                          admin='skimanikings', , police_number=919, healthcenter_number=919, occupants_count='1')
         self.neighbourhood.save()
 
     def test_instance(self):
@@ -51,16 +47,16 @@ class TestNeigbourhood(TestCase):
 
 class TestBusiness(TestCase):
     def setUp(self):
-        self.user = User(username='Cynthia',
-                         email='g@gmail.com', password='123')
+        self.user = User(username='skimanikings',
+                         email='kimanisimon856@@gmail.com', password='qwertyuioplkjh')
         self.user.save()
 
         self.neighbourhood = Neigbourhood(
-            name='Kmos', description='My neighbourhood', police_number=0, health_number=0)
+            name='simon', description='Party the night away!!', police_number=919, health_number=919)
         self.hood.save()
 
-        self.busins = Business(name='Kuku base', email='kukubase@gmail.com',
-                               description='chicken base', neighbourhood=self.hood, user=self.user)
+        self.busins = Business(name='Club Genge', email='gengeclub@gmail.com',
+                               description='Party the night away!!', neighbourhood=self.hood, user=self.user)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.busins, Business))
