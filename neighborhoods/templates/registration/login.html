@@ -1,26 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'registration/base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <form action="" method="POST" novalidate>
-                {% csrf_token %}
-                {{ form|crispy }}
-                <button class="btn btn-sm btn-info">Login</button>
+<div class="container register">
+        <div class="col-md-6 simonn mt-5">
+            <h3 class="title text-center header">Login Today!</h3>
+            <p class="signup text-center para">Not a member?<a href="{%url 'signup'%}"><span class="sss">register</span></a>
+            </p>
+    
+    
+            <form action="" method="POST">
+                {% csrf_token%}
+                {{form | crispy}}
+                <a href=""><button class="btn btn-info" type="submit">Sign In</button></a>
             </form>
         </div>
-        <div class="col-md-3"></div>
     </div>
-</div>
-
-<style>
-    body {
-        background-image: url('/static/images/index4.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>
+    
 {% endblock %}
