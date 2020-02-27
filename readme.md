@@ -15,7 +15,7 @@ This is a Django made application that allows users to:
 
 This is a Django app where you can register, log in and join a neighborhood or create one if it's not already there. You can only join a single neighborhood. Inside a neighborhood, you can view and also create posts.
 ## Project Sceenshots
-![image](static/images/logo.png)
+![image](static/images/Screenshot.png)
 
  
 ## Project links
