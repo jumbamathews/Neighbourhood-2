@@ -1,6 +1,6 @@
-# Neighbourhood~Watch.
+# Hood=Ke
 
-##### By skimanikings
+##### By 
 
 
 # Description  
@@ -19,16 +19,16 @@ This is a Django app where you can register, log in and join a neighborhood or c
 
  
 ## Project links
-Github link:  https://github.com/SkimaniKings/Neighbourhood.git 
+Github link:  
 
-Live site: [View Site]( https://tinghoods.herokuapp.com/)
+Live site: [View Site]( https://hoodk.herokuapp.com/)
 
   
 ## Setup and Installation  
 To get the project,here is a list of commands: 
   
 ##### Clone the repository:  
-`git clone https://github.com/SkimaniKings/Neighbourhood.git `
+`git clone 
 
 ##### Install and activate Virtual  
 
@@ -64,13 +64,13 @@ Open the application on your browser `127.0.0.1:8000`.
 * There are no known bugs at the moment.
   
 ## Contact Information   
-If you have any question or contributions, please email me at kimanisimon856@gmail.com 
-You can also reach me through - O713813919
+If you have any question or contributions, please email me at 
+You can also reach me through - 
 
 ## Licence
 The MIT License (MIT)
 
-Copyright (c) 2020 kimanisimon
+Copyright (c) 2020 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -80,4 +80,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   
 
 
- Copyright (c) 2020 **Kimani Simon** 
+ Copyright (c) 2020 **mj** 
